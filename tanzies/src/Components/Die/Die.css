@@ -1,0 +1,24 @@
+.die-button {
+    background-color: #ffffff; /* White background */
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    width: 70px; /* Width of the dice */
+    height: 70px; /* Height of the dice */
+    font-size: 24px; /* Font size for numbers */
+    font-weight: bold; /* Bold text */
+    color: #333333; /* Dark grey text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .die-button:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .die-button.held {
+    background-color: #ffeb3b; /* Yellow background for held dice */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  }
+  

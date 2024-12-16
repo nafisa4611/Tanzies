@@ -1,0 +1,71 @@
+/* Full-screen centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #001f3f; /* Deep blue background */
+  margin: 0;
+}
+
+.box {
+  text-align: center;
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  border-radius: 15px; /* Rounded corners for the box */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+}
+
+.game-title {
+  color: #001f3f; /* Deep blue color for text */
+  font-size: 36px; /* Large title */
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Uppercase for a clean look */
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 dice per row */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Styling for each die (button) */
+.die-button {
+  background-color: #ffffff; /* White background */
+  border: none;
+  border-radius: 15px; /* Rounded corners */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
+  font-size: 20px; /* Font size for numbers */
+  font-weight: bold; /* Bold text */
+  color: #333333; /* Dark text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.die-button:hover {
+  transform: translateY(-5px); /* Lift button effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+.roll-button {
+  background-color: #800080; /* Purple color */
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  outline: none;
+}
+
+.roll-button:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  background-color: #9b30b6; /* Lighter purple on hover */
+}
